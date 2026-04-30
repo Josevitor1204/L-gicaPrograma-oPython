@@ -18,63 +18,60 @@ print("O valor em Cellsius é ", celsius)
 '''Questão 3
 '''
 
-'''#Questão4 
+# #Questão4 
 
-n1 = float(input("Digite um número: "))
-n2 = float(input("Digite um segundo número: "))
-n3 = float(input("Digite um terceiro número: "))
+# n1 = float(input("Digite um número: "))
+# n2 = float(input("Digite um segundo número: "))
+# n3 = float(input("Digite um terceiro número: "))
 
-media = (n1 + n2 + n3) / 3
-print("A média dos números são: ", media)
-'''
+# media = (n1 + n2 + n3) / 3
+# print("A média dos números são: ", media)
 
-#Questão5
-
-'''
-nome = str(input("Digite seu nome: "))
-print (type(nome))'''
+# #Questão5
 
 
-"""
-#Questão6
-
-lista_principal=[]
-dobro=[]"""
+# nome = str(input("Digite seu nome: "))
+# print (type(nome))
 
 
-'''
-#Questão7
 
-num1 = float(input("Digite o primeiro numero: "))
-num2 = float(input("Digite o segundo numero: "))
+# #Questão6
 
-result = num1 > num2
-print(result)'''
+# lista_principal=[]
+# dobro=[]
 
 
-'''
-#Questão8
 
-nome1 = input("Digite o primeiro nome completo: ")
-nome2 = input("Digite o segundo nome completo: ")
+# #Questão7
 
-# separando o nome do sobrenome
-parte1 = nome1.split()
-parte2 = nome2.split()
+# num1 = float(input("Digite o primeiro numero: "))
+# num2 = float(input("Digite o segundo numero: "))
 
-# pegar o primeiro nome e sobrenome
-primeiro_nome1 = parte1[0]
-sobrenome1 = parte1[-1]
+# result = num1 > num2
+# print(result)
 
-primeiro_nome2 = parte2[0]
-sobrenome2 = parte2[-1]
 
-novo_nome1 = primeiro_nome1 + " " + sobrenome2
-novo_nome2 = primeiro_nome2 + " " + sobrenome1
 
-print(novo_nome1)
-print(novo_nome2)'''
+# #Questão8
 
-'''
+# nome1 = input("Digite o primeiro nome completo: ")
+# nome2 = input("Digite o segundo nome completo: ")
 
-'''
+# # separando o nome do sobrenome
+# parte1 = nome1.split()
+# parte2 = nome2.split()
+
+# # pegar o primeiro nome e sobrenome
+# primeiro_nome1 = parte1[0]
+# sobrenome1 = parte1[-1]
+
+# primeiro_nome2 = parte2[0]
+# sobrenome2 = parte2[-1]
+
+# novo_nome1 = primeiro_nome1 + " " + sobrenome2
+# novo_nome2 = primeiro_nome2 + " " + sobrenome1
+
+# print(novo_nome1)
+# print(novo_nome2)
+
+
