@@ -1,0 +1,8 @@
+CRUD = Create, Read, Uptade, Delete
+Pasta = diretório
+Terminal = console
+CD --> Navegar em diretórios
+CD .. --> Voltar nível diretótio
+Path (Caminho) --> Caminho do diretório
+LS --> Lista o que tem no diretório
+CLS --> terminal

@@ -1,0 +1,10 @@
+nome = input("Digite o seu nome: ")
+nasc = input("Digite sua data de nascimento: ")
+altura = input("Digite sua altura: ")
+peso = input("Digite seu peso: ")
+
+print("Olá ",nome,", seja bem-vindo ao sistema Python!")
+print("Aqui estão as suas informações: \n")
+print("Data de nascimento:",nasc)
+print("Altura:",altura)
+print("Peso:",peso)
