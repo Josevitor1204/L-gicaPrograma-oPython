@@ -51,11 +51,11 @@ while True:
             print('❗Nenhum carro cadastrado.')
         else:
             print('\n 📋 Lista de carros')
-            with open('infor_carros.txt','r')as arquivo:
-                linhas = arquivo.readlines()
+              
+            with open('infor_carros.txt', 'r') as arquivo:
+                for linha in arquivo:
+                    print(linha.strip())
 
-                print(type(linhas))
-                print(linhas.strip())    
 
     #Sair
     elif opcao == '0':
