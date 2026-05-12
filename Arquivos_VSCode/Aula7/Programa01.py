@@ -75,9 +75,3 @@ while True:
             print(f'\r[{barra}] {porcentagem}%', end="")
             time.sleep(0.2)
         break
-
-    while True:
-        sair = input("Deseja sair do sistema? s/n").lower()
-
-        if sair == 's':
-            break
