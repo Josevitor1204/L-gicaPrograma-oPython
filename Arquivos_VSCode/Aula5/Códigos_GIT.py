@@ -17,6 +17,9 @@ Para repositório já existente:
 4. git branch -M main
 5. git push origin main
 
+Clonar repositório:
+1.Copiar o link do repositório
+2. git clone LINK_DO_REPOSITÓRIO_NO_GITHUB
 """
 
 usuarios = []
