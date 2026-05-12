@@ -30,12 +30,19 @@ while True:
         marca = input('Digite a marca: ').title()
 
         carros = {
-            "id"         : proximo_id,
+            "modelo"    : modelo,
+            "preco"      : preco,
+            "marca"      : marca
         }
-        with open('infor_carros.txt','w') as arquivo:
+
+        with open('infor_carros.txt','a') as arquivo:
             arquivo.write(f'{modelo}\n')
             arquivo.write(f'{preco}\n')
             arquivo.write(f'{marca}\n')
+
+        with open('frutas.txt', "a") as arquivo:
+            for carro in carros:
+                arquivo.write(carro + '\n ')
 
 
         proximo_id += 1
@@ -56,8 +63,7 @@ while True:
                 for linha in arquivo:
                     print(linha.strip())
 
-
-    #Sair
+    #sair
     elif opcao == '0':
         total = 20
         barra =""
@@ -69,3 +75,9 @@ while True:
             print(f'\r[{barra}] {porcentagem}%', end="")
             time.sleep(0.2)
         break
+
+    while True:
+        sair = input("Deseja sair do sistema? s/n").lower()
+
+        if sair == 's':
+            break
