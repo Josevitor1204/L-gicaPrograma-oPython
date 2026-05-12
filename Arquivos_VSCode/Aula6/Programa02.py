@@ -51,22 +51,21 @@ while True:
         else:
             print ("\n 📋Lista de carros")
             for carro in carros:
-                print(f'ID: {carro['id']} | Modelo: {carro['modelo']} | Preço: {carro['preço']} | Marca: {carro['marca']}')
+                print(f'ID: {carro['id']} | Modelo {carro['modelo']} | Preço {carro['preço']} | Marca {carro['marca']}')
 
     #Uptade
     elif opcao == '3':
-        os.system('cls')
-        for carro in carros:
-            print('\n 📋Lista de carros')
-            for carro in carros: 
-                print(f'ID: {carro['id']} | Modelo: {carro['modelo']} | Preço: {carro['preço']} | Marca: {carro['marca']}')
+        print('\n 📋Lista de carros')
+        for carro in carros: 
+            print(f'ID: {carro['id']} | Modelo {carro['modelo']} | Preço {carro['preço']} | Marca {carro['marca']}')
+        
         id_busca = int(input('Digite o id do carro para atualizar: '))
 
         encontrado = False
         for carro in carros:
             if carro['id'] == id_busca:
                 novo_modelo = input('Digite o novo modelo: ').title()
-                novo_preco = float(input('Digite o novo preço: ').replace(',','.'))
+                novo_preco = float(input('Digite o novo preço: ').replace(',', '.'))
                 nova_marca = input('Digite a nova marca: ').title()
 
                 carro['modelo'] = novo_modelo
@@ -79,15 +78,29 @@ while True:
         if not encontrado:
             print('❌ Carro não encontrado!')
 
+        time.sleep(3)
+        os.system('cls')
+
     #delete
     elif opcao == '4':
-        os.system('cls')
         print('\n 📋Lista de carros')
         for carro in carros :
-            print(f'ID: {carro['id']} | Modelo: {carro['modelo']} | Preço: {carro['preço']} | Marca: {carro['marca']}')
+            print(f'ID: {carro['id']} | Modelo {carro['modelo']} | Preço {carro['preço']} | Marca {carro['marca']}')
         id_busca = int(input('Digite o id do carro para atualizar: '))
 
-        
+        encontrado = False
+
+        for carro in carros:
+            if carro ['id'] == id_busca:
+                carros.remove(carro)
+                print('✅ Carro deletado com sucesso!')
+                encontrado = True
+                break
+        if not encontrado:
+            print('❌ Carro não encontrado!')
+
+        time.sleep(3)
+        os.system('cls')
 
     # sair
     elif opcao == '0':
