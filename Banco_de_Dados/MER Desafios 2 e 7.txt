@@ -1,0 +1,47 @@
+Desafio
+
+Paciente --> ID, Nome, CPF, Telefone, Data_nascimento, FK_ID_prontuario
+Prontuario --> ID, Observacao, Data_entrada, Data_saida
+Medico --> ID, Nome, CRM, Email, Telefone, FK_ID_especialidade
+Especialidade --> ID, Nome, Descricao
+Consulta --> ID, Data_hora, Observacao, Diagnostico
+Exames --> ID, Nome, Descricao, Data_hora
+Consulta_Exame --> FK_ID_consulta, FK_ID_exame, Data_solicitacao, Resultado
+
+Regras de negócio
+Um paciente possui apenas um prontuário.
+Um prontuário pertence a apenas um paciente.
+Um médico realiza várias consultas.
+Um paciente pode realizar várias consultas.
+Cada consulta é realizada por apenas um médico.
+Uma consulta atende apenas um paciente.
+Um médico possui uma especialidade.
+Uma especialidade possui vários médicos.
+Uma consulta pode solicitar vários exames.
+Um exame pode ser solicitado em várias consultas.
+Relacionamentos esperados
+1:1
+1:N
+N:N
+
+
+Desafio 7
+
+Participante --> ID, Nome, Email, Telefone, CPF
+Evento --> ID, Nome, Dt_Hora, tema, FK_ID_Palestra
+Palestrante --> ID, Nome, Telefone, Email, CPF
+Palestra --> ID, Nome, Dt_Hora, tema
+Cracha --> ID, FK_ID_Participante
+Patrocinador --> ID, Nome, Email, Telefone, CNPJ
+Participante_evento --> ID_Participante, ID_Evento
+Patrocinador_evento --> ID_Patrocinador, ID_Evento, Contrato, Produto
+
+Um participante pode se inscrever em vários eventos.
+Um evento possui vários participantes.
+Um palestrante pode ministrar várias palestras.
+Cada palestra pertence a um evento.
+Um evento possui várias palestras.
+Cada participante possui um crachá exclusivo.
+Um crachá pertence a apenas um participante.
+Um patrocinador pode patrocinar vários eventos.
+Um evento pode possuir vários patrocinadores.
